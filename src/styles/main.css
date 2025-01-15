@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'IsaacGame';
+    src: url('/src/assets/fonts/IsaacGame.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    font-family: 'IsaacGame';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #583739;
+    color: #f0f0f0
+}
+
+.header {
+    background-color: #282828;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+}
+
+.character-display {
+    position: relative;
+    margin: 20px;
+    background-image: url('/src/assets/ui_images/character_background_ui.png');
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+    border: 2px solid #444;
+    padding: 15px;
+    text-align: center;
+}
+
+.character-display img {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+
+.character-display select {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    outline: none;
+}
+
+.stats-display {
+    flex: 1;
+    background-color: #2b2b2b;
+    border: 2px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+.stats-display .stat {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-display, .items-list {
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
