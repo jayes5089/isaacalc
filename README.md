@@ -1,16 +1,5 @@
 # Isaac Calculator README
 
-## Project Overview
-
-The Isaac Calculator is a web application designed for fans of "The Binding of Isaac: Rebirth." This application allows users to select characters, view their stats, and manage items that affect gameplay. It provides an interactive interface to enhance the gaming experience.
-
-## Features
-
-- **Character Selection**: Users can choose from a variety of characters using a dropdown menu.
-- **Character Stats Display**: The application displays the stats of the currently selected character.
-- **Selected Items**: Users can view the items they have selected, which affect their character's performance.
-- **All Items Display**: A comprehensive list of all in-game items that influence character statistics is available for reference.
-
 ## Project Structure
 
 ```
