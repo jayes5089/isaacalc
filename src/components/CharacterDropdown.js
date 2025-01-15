@@ -7,7 +7,7 @@ const CharacterDropdown = ({ selectedCharacter, setSelectedCharacter }) => {
 
     return (
         <div className="character-dropdown">
-            <label htmlFor="character-select">Character:</label>
+            <label htmlFor="character-select">Character:<br></br></label>
             <select id="character-select" value={selectedCharacter} onChange={handleChange}>
                 <option value="Isaac">Isaac</option>
                 <option value="Magdalene">Magdalene</option>

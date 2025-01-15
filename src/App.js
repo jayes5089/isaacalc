@@ -22,15 +22,19 @@ const App = () => {
                 <h1>The Binding of Isaac: Rebirth</h1>
             </header>
             <main className="container">
-                <section className="character-display">
-                    <CharacterImage selectedCharacter={selectedCharacter} />
-                    <CharacterDropdown
-                        selectedCharacter={selectedCharacter}
-                        setSelectedCharacter={handleCharacterChange}
-                    />
+                <section className="character-section">
+                    <div className="character-display">
+                        <CharacterImage selectedCharacter={selectedCharacter} />
+                        <CharacterDropdown
+                            selectedCharacter={selectedCharacter}
+                            setSelectedCharacter={handleCharacterChange}
+                        />
+                    </div>
                 </section>
-                <section className="stats-display">
-                    <StatsDisplay stats={stats} />
+                <section className="stats-section">
+                    <div className="stats-display">
+                        <StatsDisplay stats={stats} />
+                    </div>
                 </section>
             </main>
         </div>
