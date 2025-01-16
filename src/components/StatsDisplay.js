@@ -8,7 +8,7 @@ import luckIcon from '../assets/stat_icon/luck_stat_ui.png';
 import EditableStats from './EditableStats';
 import DualCharacterStats from './DualCharacterStats';
 
-const StatsDisplay = ({ stats }) => {
+const StatsDisplay = ({ stats, character }) => {
     const statIcons = {
         speed: speedIcon,
         tears: tearsIcon,
@@ -19,7 +19,7 @@ const StatsDisplay = ({ stats }) => {
     };
 
 
-    if (character === "eden") {
+    if (character === "Eden") {
         return (
             <EditableStats
                 stats={stats}
@@ -28,7 +28,7 @@ const StatsDisplay = ({ stats }) => {
         );
     };
 
-    if (character === "forgotten") {
+    if (character === "Forgotten") {
         return (
             <DualCharacterStats
                 characterStats={stats.forgotten}
@@ -37,7 +37,7 @@ const StatsDisplay = ({ stats }) => {
         );
     };
 
-    if (character === "jacobEsau") {
+    if (character === "JacobEsau") {
         return (
             <DualCharacterStats
                 characterStats={stats.jacobEsau}

@@ -13,7 +13,7 @@ const App = () => {
     
     const handleCharacterChange = (character) => {
         setSelectedCharacter(character);
-        setStats(CharacterBaseStats[character]);
+        setStats(CharacterBaseStats[character] || {});
     };
 
     return (
@@ -33,7 +33,7 @@ const App = () => {
                 </section>
                 <section className="stats-section">
                     <div className="stats-display">
-                        <StatsDisplay stats={stats} />
+                        <StatsDisplay stats={stats} character={selectedCharacter} />
                     </div>
                 </section>
             </main>

@@ -1,6 +1,11 @@
 import React from 'react';
 
-const DualCharacterStats = ({ characterStats, labels }) => (
+const DualCharacterStats = ({ characterStats, labels }) => {
+    if (!characterStats) {
+        return <div>No stats available for this character.</div>
+    }
+
+    return (
     <div className="dual-character-display">
         {Object.keys(characterStats).map(([key, stats]) => (
             <div key={key} className="character-stats">
@@ -14,6 +19,7 @@ const DualCharacterStats = ({ characterStats, labels }) => (
             </div>
         ))}
     </div>
-);
+    );
+};
 
 export default DualCharacterStats;
