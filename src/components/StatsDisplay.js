@@ -1,13 +1,19 @@
 import React from 'react';
+import speedIcon from '../assets/stat_icon/speed_stat_ui.png';
+import tearsIcon from '../assets/stat_icon/tears_stat_ui.png';
+import damageIcon from '../assets/stat_icon/damage_stat_ui.png';
+import rangeIcon from '../assets/stat_icon/range_stat_ui.png';
+import shotSpeedIcon from '../assets/stat_icon/shotSpeed_stat_ui.png'
+import luckIcon from '../assets/stat_icon/luck_stat_ui.png';
 
 const StatsDisplay = ({ stats }) => {
     const statIcons = {
-        speed: require('../assets/ui_images/speed_stat_ui.png'),
-        fireRate: require('../assets/ui_images/fireRate_stat_ui.png'),
-        damage: require('../assets/ui_images/damage_stat_ui.png'),
-        range: require('../assets/ui_images/range_stat_ui.png'),
-        shotSpeed: require('../assets/ui_images/shotSpeed_stat_ui.png'),
-        luck: require('../assets/ui_images/luck_stat_ui.png'),
+        speed: speedIcon,
+        tears: tearsIcon,
+        damage: damageIcon,
+        range: rangeIcon,
+        shotSpeed: shotSpeedIcon,
+        luck: luckIcon,
     };
 
     return (
