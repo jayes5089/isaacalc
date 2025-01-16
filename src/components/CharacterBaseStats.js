@@ -112,12 +112,22 @@ const CharacterBaseStats = {
         luck: 0.00,
     },
     Forgotten: {
-        speed: 1.00,
-        tears: 1.36,
-        damage: 5.25,
-        range: 6.50,
-        shotSpeed: 1.00,
-        luck: 0.00,
+        melee: {
+            speed: 1.00,
+            tears: 1.36,
+            damage: 5.25,
+            range: 6.50,
+            shotSpeed: 1.00,
+            luck: 0.00,
+        },
+        soul: {
+            speed: 1.30,
+            tears: 2.73,
+            damage: 3.50,
+            range: 6.50,
+            shotSpeed: 1.00,
+            luck: 0.00,
+        },
     },
     Bethany: {
         speed: 1.00,
@@ -127,22 +137,24 @@ const CharacterBaseStats = {
         shotSpeed: 1.00,
         luck: 0.00,
     },
-    Jacob: {
-        speed: 1.00,
-        tears: 3.00,
-        damage: 2.75,
-        range: 5.00,
-        shotSpeed: 1.15,
-        luck: 1.00,
-    },
-    Esau: {
-        speed: 1.00,
-        tears: 2.50,
-        damage: 3.75,
-        range: 8.00,
-        shotSpeed: 0.85,
-        luck: -1.00,
-    },
+    JacobEsau: {
+        jacob: {
+            speed: 1.00,
+            tears: 3.00,
+            damage: 2.75,
+            range: 5.00,
+            shotSpeed: 1.15,
+            luck: 1.00,
+        },
+        esau: {
+            speed: 1.00,
+            tears: 2.50,
+            damage: 3.75,
+            range: 8.00,
+            shotSpeed: 0.85,
+            luck: -1.00,
+        },
+    },  
 };
 
 export default CharacterBaseStats;

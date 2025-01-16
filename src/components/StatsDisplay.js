@@ -5,6 +5,8 @@ import damageIcon from '../assets/stat_icon/damage_stat_ui.png';
 import rangeIcon from '../assets/stat_icon/range_stat_ui.png';
 import shotSpeedIcon from '../assets/stat_icon/shotSpeed_stat_ui.png'
 import luckIcon from '../assets/stat_icon/luck_stat_ui.png';
+import EditableStats from './EditableStats';
+import DualCharacterStats from './DualCharacterStats';
 
 const StatsDisplay = ({ stats }) => {
     const statIcons = {
@@ -14,6 +16,34 @@ const StatsDisplay = ({ stats }) => {
         range: rangeIcon,
         shotSpeed: shotSpeedIcon,
         luck: luckIcon,
+    };
+
+
+    if (character === "eden") {
+        return (
+            <EditableStats
+                stats={stats}
+                onChange={(statKey, value) => console.log(`${statKey}: ${value}`)}
+            />
+        );
+    };
+
+    if (character === "forgotten") {
+        return (
+            <DualCharacterStats
+                characterStats={stats.forgotten}
+                labels={{ melee: "The Forgotten (Melee)", soul: "The Forgotten (Soul)" }}
+            />
+        );
+    };
+
+    if (character === "jacobEsau") {
+        return (
+            <DualCharacterStats
+                characterStats={stats.jacobEsau}
+                labels={{ jacob: "Jacob", esau: "Esau" }}
+            />
+        );
     };
 
     return (

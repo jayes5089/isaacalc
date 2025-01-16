@@ -25,8 +25,7 @@ const CharacterDropdown = ({ selectedCharacter, setSelectedCharacter }) => {
                 <option value="Apollyon">Apollyon</option>
                 <option value="Forgotten">The Forgotten</option>
                 <option value="Bethany">Bethany</option>
-                <option value="Jacob">Jacob</option>
-                <option value="Esau">Esau</option>
+                <option value="JacobEsau">Jacob & Esau</option>
             </select>
         </div>
     );
