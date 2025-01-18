@@ -13,17 +13,31 @@ const AllItems = () => {
         fetchItems();
     }, []);
 
+    const categorizedItems = items.reduce((acc, item) => {
+        const { dlc } = item;
+        if (!acc[dlc]) {
+            acc[dlc] = [];
+        }
+        acc[dlc].push(item);
+        return acc;
+    }, {});
+
     return (
         <div className="all-items">
             <h2>All In-Game Items</h2>
-            <ul>
-                {items.map(item => (
-                    <li key={item.id}>
-                        <h3>{item.name}</h3>
-                        <p>{item.description}</p>
-                    </li>
-                ))}
-            </ul>
+            {Object.keys(categorizedItems).map(dlc => (
+                <div key={dlc} className="dlc-category">
+                    <h3>{dlc}</h3>
+                    <ul>
+                        {categorizedItems[dlc].map(item => (
+                            <li key={item.id}>
+                                <h4>{item.name}</h4>
+                                <p>{item.description}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </div>
     );
 };

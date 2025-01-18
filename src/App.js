@@ -5,11 +5,13 @@ import StatsDisplay from './components/StatsDisplay';
 import CharacterBaseStats from './components/CharacterBaseStats';
 import SelectedItems from './components/SelectedItems';
 import AllItems from './components/AllItems';
+import HeldItems from './components/HeldItems';
 import './styles/main.css';
 
 const App = () => {
     const [selectedCharacter, setSelectedCharacter] = useState("Isaac");
     const [stats, setStats] = useState(CharacterBaseStats["Isaac"]);
+    const [heldItems, setHeldItems] = useState([]);
     
     const handleCharacterChange = (character) => {
         setSelectedCharacter(character);
@@ -35,6 +37,10 @@ const App = () => {
                     <div className="stats-display">
                         <StatsDisplay stats={stats} character={selectedCharacter} />
                     </div>
+                </section>
+                <section className="items-section">
+                    <HeldItems heldItems={heldItems} />
+                    <AllItems />
                 </section>
             </main>
         </div>
