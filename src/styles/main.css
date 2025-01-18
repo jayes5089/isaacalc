@@ -76,15 +76,24 @@ label, span {
     image-rendering: pixelated;
     background-position: center;
     border: 2px solid #444;
-    padding: 135px;
+    padding: 90px;
     text-align: left;
+    width: fit-content;
+}
+
+.stats-display {
+    height: auto;
+    width: 350px;
 }
 
 .stat {
     margin-bottom: 10px;
     display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 10px; /* Add space between icon and text */
+    gap: 10px;
+}
+
+.stat span {
+    
 }
 
 .stat-icon {

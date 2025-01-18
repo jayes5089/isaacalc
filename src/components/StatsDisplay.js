@@ -1,10 +1,10 @@
 import React from 'react';
-import speedIcon from '../assets/stat_icon/speed_stat_ui.png';
-import tearsIcon from '../assets/stat_icon/tears_stat_ui.png';
-import damageIcon from '../assets/stat_icon/damage_stat_ui.png';
-import rangeIcon from '../assets/stat_icon/range_stat_ui.png';
-import shotSpeedIcon from '../assets/stat_icon/shotSpeed_stat_ui.png'
-import luckIcon from '../assets/stat_icon/luck_stat_ui.png';
+import speedIcon from '../assets/stat_icon/speed_stat_ui.webp';
+import tearsIcon from '../assets/stat_icon/tears_stat_ui.webp';
+import damageIcon from '../assets/stat_icon/damage_stat_ui.webp';
+import rangeIcon from '../assets/stat_icon/range_stat_ui.webp';
+import shotSpeedIcon from '../assets/stat_icon/shotSpeed_stat_ui.webp'
+import luckIcon from '../assets/stat_icon/luck_stat_ui.webp';
 import EditableStats from './EditableStats';
 import DualCharacterStats from './DualCharacterStats';
 
